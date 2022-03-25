@@ -1,9 +1,13 @@
 # Imports
+import nltk
+nltk.download('punkt')
+
 import fasttext
 import pandas as pd
 import streamlit as st
 import plotly.express as px
 from nltk.tokenize import sent_tokenize
+
 
 
 # Class
