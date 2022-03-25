@@ -9,7 +9,7 @@ from nltk.tokenize import sent_tokenize
 # Class
 class LanguageDetection:
     def __init__(self):
-        self.language_detection_model = fasttext.load_model('language_detection_model.bin')
+        self.language_detection_model = fasttext.load_model('language_detection_model.ftz')
 
     def get_prediction(self, text):
         result = self.language_detection_model.predict(str(text))
