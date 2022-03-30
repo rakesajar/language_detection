@@ -53,6 +53,6 @@ if __name__ == '__main__':
     st.plotly_chart(fig)
 
     unique_languages = df['Language Code'].unique().tolist()
-    language_choices = st.multiselect("Select Language Code", unique_languages)
+    language_choices = st.multiselect("Select Language Code", unique_languages, default=unique_languages)
     rdf = df[df['Language Code'].isin(language_choices)]
     st.write(rdf)
